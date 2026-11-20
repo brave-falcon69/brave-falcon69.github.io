@@ -1,0 +1,1392 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2025欧美大片 - 品牌影像_全球重磅影片深度解读</title>
+<meta name="description" content="2025欧美大片官方网站，聚焦全球重磅影片的首发资讯、深度解读与创作者内容生态，为影迷提供高品质的原创视频社区与品牌故事。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101418'/%3E%3Cpath d='M24 20 L46 32 L24 44 Z' fill='%23ff4d3d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --fw-bg:#0e1116;
+  --fw-bg2:#151a21;
+  --fw-card:#1b222b;
+  --fw-line:rgba(255,255,255,.08);
+  --fw-txt:#e8edf3;
+  --fw-sub:#93a1b3;
+  --fw-accent:#ff4d3d;
+  --fw-accent2:#ffd166;
+  --fw-cyan:#4ecdc4;
+  --fw-radius:16px;
+  --fw-shadow:0 18px 40px rgba(0,0,0,.45);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  background:
+    radial-gradient(1200px 600px at 85% -10%, rgba(255,77,61,.14), transparent 60%),
+    radial-gradient(900px 500px at 5% 20%, rgba(78,205,196,.10), transparent 55%),
+    var(--fw-bg);
+  color:var(--fw-txt);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none;}
+img{display:block;max-width:100%;}
+ul{list-style:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+input{font-family:inherit;}
+::selection{background:var(--fw-accent);color:#fff;}
+
+/* ============ 吸顶容器 ============ */
+.fw-sticky-shell{
+  position:sticky;
+  top:0;
+  z-index:900;
+  backdrop-filter:blur(14px);
+  background:rgba(14,17,22,.86);
+  border-bottom:1px solid var(--fw-line);
+}
+
+/* ============ 公告条 ============ */
+.fw-announce{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:8px clamp(16px,4vw,64px);
+  font-size:13px;
+  color:var(--fw-sub);
+  background:linear-gradient(90deg,rgba(255,77,61,.16),rgba(255,209,102,.08) 55%,transparent);
+  border-bottom:1px solid var(--fw-line);
+  overflow:hidden;
+}
+.fw-announce-tag{
+  flex:0 0 auto;
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:.12em;
+  color:#0e1116;
+  background:var(--fw-accent2);
+  border-radius:4px;
+  padding:2px 8px;
+}
+.fw-announce-track{
+  flex:1 1 auto;
+  display:flex;
+  gap:0;
+  white-space:nowrap;
+  overflow:hidden;
+  mask-image:linear-gradient(90deg,#000 0,#000 88%,transparent 100%);
+}
+.fw-announce-track ul{
+  display:flex;
+  gap:48px;
+  animation:fw-marquee 32s linear infinite;
+}
+.fw-announce-track li{display:inline-flex;align-items:center;gap:8px;}
+.fw-announce-track li::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--fw-accent);flex:0 0 auto;}
+.fw-announce-track b{color:var(--fw-txt);font-weight:600;}
+@keyframes fw-marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* ============ 页头 ============ */
+.fw-header{
+  display:flex;
+  align-items:center;
+  gap:clamp(12px,2.5vw,40px);
+  padding:12px clamp(16px,4vw,64px);
+}
+.fw-brand{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.fw-brand-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(140deg,var(--fw-accent),#b8261a);
+  display:grid;place-items:center;
+  box-shadow:0 6px 18px rgba(255,77,61,.35);
+}
+.fw-brand-mark svg{width:18px;height:18px;}
+.fw-brand-name{font-weight:800;font-size:17px;letter-spacing:.02em;line-height:1.2;}
+.fw-brand-name small{display:block;font-size:10px;font-weight:500;letter-spacing:.22em;color:var(--fw-sub);}
+.fw-nav{display:flex;align-items:center;gap:4px;flex:1 1 auto;overflow:hidden;}
+.fw-nav a{
+  font-size:14px;color:var(--fw-sub);
+  padding:8px 12px;border-radius:9px;
+  white-space:nowrap;transition:.22s;
+}
+.fw-nav a:hover,.fw-nav a.fw-active{color:var(--fw-txt);background:rgba(255,255,255,.07);}
+.fw-header-tools{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+.fw-search{
+  display:flex;align-items:center;gap:8px;
+  background:var(--fw-bg2);
+  border:1px solid var(--fw-line);
+  border-radius:11px;
+  padding:7px 12px;
+  transition:.25s;
+}
+.fw-search:focus-within{border-color:rgba(255,77,61,.55);box-shadow:0 0 0 3px rgba(255,77,61,.12);}
+.fw-search svg{width:15px;height:15px;color:var(--fw-sub);flex:0 0 auto;}
+.fw-search input{
+  border:none;background:none;outline:none;color:var(--fw-txt);
+  font-size:13px;width:150px;
+}
+.fw-search input::placeholder{color:#5f6b7a;}
+.fw-btn-ghost{
+  font-size:13px;padding:8px 16px;border-radius:10px;
+  border:1px solid var(--fw-line);color:var(--fw-sub);transition:.22s;
+}
+.fw-btn-ghost:hover{color:var(--fw-txt);border-color:rgba(255,255,255,.25);}
+.fw-btn-primary{
+  font-size:13px;font-weight:700;padding:9px 18px;border-radius:10px;
+  background:linear-gradient(135deg,var(--fw-accent),#d8352a);
+  color:#fff;box-shadow:0 6px 18px rgba(255,77,61,.3);transition:.22s;
+}
+.fw-btn-primary:hover{transform:translateY(-1px);box-shadow:0 10px 24px rgba(255,77,61,.42);}
+.fw-burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--fw-line);place-items:center;}
+.fw-burger span{display:block;width:17px;height:2px;background:var(--fw-txt);margin:2.5px 0;border-radius:2px;transition:.25s;}
+.fw-mobile-nav{display:none;padding:8px clamp(16px,4vw,64px) 18px;border-top:1px solid var(--fw-line);}
+.fw-mobile-nav.fw-open{display:block;}
+.fw-mobile-nav a{display:block;padding:11px 8px;font-size:15px;color:var(--fw-sub);border-radius:9px;}
+.fw-mobile-nav a:hover{background:rgba(255,255,255,.06);color:var(--fw-txt);}
+
+/* ============ 通用容器 ============ */
+.fw-wrap{max-width:1240px;margin:0 auto;padding:0 clamp(16px,4vw,48px);}
+.fw-section{padding:clamp(48px,7vw,92px) 0;scroll-margin-top:112px;}
+.fw-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.2em;font-weight:700;
+  color:var(--fw-accent);
+  text-transform:uppercase;
+  margin-bottom:14px;
+}
+.fw-eyebrow::before{content:"";width:22px;height:2px;background:var(--fw-accent);}
+.fw-h2{
+  font-size:clamp(24px,3.4vw,36px);
+  line-height:1.25;font-weight:800;letter-spacing:.01em;
+}
+.fw-h2 em{font-style:normal;color:var(--fw-accent2);}
+.fw-section-desc{color:var(--fw-sub);font-size:15px;max-width:720px;margin-top:14px;}
+.fw-section-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:34px;}
+
+/* ============ 首屏 ============ */
+.fw-hero{
+  position:relative;
+  padding:clamp(40px,6vw,84px) 0 clamp(48px,7vw,96px);
+  overflow:hidden;
+}
+.fw-hero::after{
+  content:"";position:absolute;inset:auto -10% -30% -10%;height:60%;
+  background:radial-gradient(closest-side,rgba(255,77,61,.12),transparent 72%);
+  pointer-events:none;
+}
+.fw-hero-grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,56px);
+  align-items:center;position:relative;z-index:2;
+}
+.fw-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;font-weight:700;letter-spacing:.08em;
+  color:var(--fw-cyan);
+  background:rgba(78,205,196,.1);
+  border:1px solid rgba(78,205,196,.28);
+  padding:5px 12px;border-radius:999px;margin-bottom:20px;
+}
+.fw-hero-badge i{width:6px;height:6px;border-radius:50%;background:var(--fw-cyan);animation:fw-pulse 1.8s infinite;}
+@keyframes fw-pulse{0%,100%{opacity:1;}50%{opacity:.25;}}
+.fw-hero-title{
+  font-size:clamp(38px,6.4vw,72px);
+  line-height:1.04;font-weight:900;letter-spacing:-.015em;
+  background:linear-gradient(120deg,#fff 25%,#ffb3ac 60%,var(--fw-accent) 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  margin-bottom:16px;
+}
+.fw-hero-sub{
+  font-size:clamp(15px,1.8vw,18px);color:var(--fw-txt);font-weight:600;
+  margin-bottom:14px;
+}
+.fw-hero-lead{color:var(--fw-sub);font-size:15px;max-width:560px;margin-bottom:26px;}
+.fw-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px;}
+.fw-hero-stats{display:flex;flex-wrap:wrap;gap:clamp(18px,3vw,42px);}
+.fw-stat b{display:block;font-size:clamp(22px,2.8vw,30px);font-weight:800;color:#fff;line-height:1.2;}
+.fw-stat span{font-size:12px;color:var(--fw-sub);letter-spacing:.06em;}
+
+.fw-hero-visual{position:relative;}
+.fw-hero-frame{
+  position:relative;border-radius:var(--fw-radius);overflow:hidden;
+  box-shadow:var(--fw-shadow);border:1px solid var(--fw-line);
+  aspect-ratio:16/10;
+}
+.fw-hero-frame img{width:100%;height:100%;object-fit:cover;}
+.fw-hero-play{
+  position:absolute;inset:0;display:grid;place-items:center;
+  background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.62));
+  transition:.3s;
+}
+.fw-hero-frame:hover .fw-hero-play{background:linear-gradient(180deg,rgba(0,0,0,.12) 40%,rgba(0,0,0,.78));}
+.fw-play-btn{
+  width:70px;height:70px;border-radius:50%;
+  background:rgba(255,255,255,.94);
+  display:grid;place-items:center;
+  box-shadow:0 0 0 12px rgba(255,255,255,.14);
+  transition:.25s;
+}
+.fw-hero-frame:hover .fw-play-btn{transform:scale(1.08);}
+.fw-play-btn svg{width:24px;height:24px;margin-left:4px;color:#0e1116;}
+.fw-hero-cap{
+  position:absolute;left:0;right:0;bottom:0;padding:16px 18px;color:#fff;
+  font-size:13px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:10px;
+}
+.fw-hero-cap span{background:rgba(255,77,61,.9);padding:3px 9px;border-radius:6px;font-size:11px;letter-spacing:.06em;}
+.fw-hero-float{
+  position:absolute;right:-14px;bottom:-22px;
+  background:var(--fw-card);border:1px solid var(--fw-line);
+  border-radius:14px;padding:12px 16px;display:flex;gap:10px;align-items:center;
+  box-shadow:var(--fw-shadow);font-size:12px;color:var(--fw-sub);
+}
+.fw-hero-float b{color:var(--fw-accent2);font-size:18px;font-weight:800;}
+
+/* ============ 关键词解析（深度长文） ============ */
+.fw-about{background:linear-gradient(180deg,rgba(21,26,33,.7),transparent);border-top:1px solid var(--fw-line);border-bottom:1px solid var(--fw-line);}
+.fw-about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(28px,4vw,60px);align-items:start;}
+.fw-about-card{
+  background:var(--fw-card);border:1px solid var(--fw-line);border-radius:var(--fw-radius);
+  padding:clamp(22px,3vw,34px);position:relative;overflow:hidden;
+}
+.fw-about-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,var(--fw-accent),var(--fw-accent2),var(--fw-cyan));
+}
+.fw-about-card h3{font-size:19px;margin-bottom:14px;}
+.fw-about-card p{color:var(--fw-sub);font-size:14.5px;margin-bottom:12px;}
+.fw-about-card p:last-child{margin-bottom:0;}
+.fw-about-list{margin-top:20px;display:grid;gap:12px;}
+.fw-about-list li{display:grid;grid-template-columns:auto 1fr;gap:12px;font-size:14px;color:var(--fw-sub);}
+.fw-about-list b{color:var(--fw-accent2);font-weight:700;font-size:12px;letter-spacing:.05em;padding-top:3px;white-space:nowrap;}
+.fw-about-article{font-size:15px;color:var(--fw-sub);}
+.fw-about-article p{margin-bottom:16px;}
+.fw-about-article strong{color:var(--fw-txt);font-weight:700;}
+.fw-about-article h3{font-size:20px;color:var(--fw-txt);margin:26px 0 12px;}
+.fw-about-article h3:first-child{margin-top:0;}
+.fw-about-article .fw-tagline{color:var(--fw-accent2);font-weight:600;}
+
+/* ============ 视频卡片 ============ */
+.fw-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.fw-vcard{
+  background:var(--fw-card);border:1px solid var(--fw-line);border-radius:var(--fw-radius);
+  overflow:hidden;transition:.3s;display:flex;flex-direction:column;
+}
+.fw-vcard:hover{transform:translateY(-5px);border-color:rgba(255,77,61,.4);box-shadow:var(--fw-shadow);}
+.fw-vcover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0a0d11;}
+.fw-vcover img{width:100%;height:100%;object-fit:cover;transition:.5s;}
+.fw-vcard:hover .fw-vcover img{transform:scale(1.06);}
+.fw-vcover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.65));}
+.fw-vtag{
+  position:absolute;top:12px;left:12px;z-index:2;
+  font-size:11px;font-weight:700;letter-spacing:.05em;
+  background:rgba(255,77,61,.92);color:#fff;padding:3px 9px;border-radius:6px;
+}
+.fw-vdur{
+  position:absolute;top:12px;right:12px;z-index:2;
+  font-size:11px;background:rgba(0,0,0,.7);padding:2px 8px;border-radius:6px;color:#dfe6ee;
+}
+.fw-vplay{
+  position:absolute;inset:0;z-index:2;display:grid;place-items:center;opacity:0;transition:.3s;
+}
+.fw-vcard:hover .fw-vplay{opacity:1;}
+.fw-vplay span{
+  width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.92);
+  display:grid;place-items:center;color:#0e1116;
+}
+.fw-vplay svg{width:18px;height:18px;margin-left:3px;}
+.fw-vbody{padding:16px 17px 15px;display:flex;flex-direction:column;gap:9px;flex:1 1 auto;}
+.fw-vtitle{font-size:15.5px;font-weight:700;line-height:1.45;}
+.fw-vdesc{font-size:13px;color:var(--fw-sub);line-height:1.65;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+.fw-vmeta{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--fw-sub);gap:8px;margin-top:auto;padding-top:6px;border-top:1px dashed var(--fw-line);}
+.fw-vmeta .fw-author{display:flex;align-items:center;gap:7px;min-width:0;}
+.fw-avatar{
+  width:24px;height:24px;border-radius:50%;flex:0 0 auto;
+  display:grid;place-items:center;font-size:11px;font-weight:800;color:#0e1116;
+}
+.fw-vact{display:flex;gap:6px;flex:0 0 auto;}
+.fw-act-btn{
+  display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--fw-sub);
+  padding:3px 7px;border-radius:7px;transition:.2s;border:1px solid transparent;
+}
+.fw-act-btn:hover{background:rgba(255,255,255,.07);color:var(--fw-txt);border-color:var(--fw-line);}
+.fw-act-btn svg{width:13px;height:13px;}
+.fw-act-btn.fw-on{color:var(--fw-accent);}
+.fw-act-btn.fw-on svg{fill:currentColor;}
+
+/* ============ 焦点内容（2大4小） ============ */
+.fw-focus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-bottom:22px;}
+.fw-focus-main{
+  position:relative;border-radius:var(--fw-radius);overflow:hidden;aspect-ratio:16/9;
+  border:1px solid var(--fw-line);box-shadow:var(--fw-shadow);
+}
+.fw-focus-main img{width:100%;height:100%;object-fit:cover;transition:.5s;}
+.fw-focus-main:hover img{transform:scale(1.05);}
+.fw-focus-main .fw-focus-mask{
+  position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.85));
+  display:flex;flex-direction:column;justify-content:flex-end;padding:24px;
+}
+.fw-focus-main h3{font-size:clamp(18px,2.2vw,24px);line-height:1.35;margin-bottom:8px;color:#fff;}
+.fw-focus-main p{font-size:13px;color:#b9c4d1;margin-bottom:14px;max-width:520px;}
+.fw-focus-chips{display:flex;gap:8px;flex-wrap:wrap;}
+.fw-chip{font-size:11px;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.14);color:#e8edf3;}
+.fw-focus-sm{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+
+/* ============ 专题 ============ */
+.fw-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.fw-topic{
+  position:relative;border-radius:var(--fw-radius);overflow:hidden;border:1px solid var(--fw-line);
+  background:var(--fw-card);transition:.3s;
+}
+.fw-topic:hover{transform:translateY(-5px);border-color:rgba(78,205,196,.4);box-shadow:var(--fw-shadow);}
+.fw-topic-img{aspect-ratio:16/10;overflow:hidden;position:relative;}
+.fw-topic-img img{width:100%;height:100%;object-fit:cover;transition:.5s;}
+.fw-topic:hover .fw-topic-img img{transform:scale(1.06);}
+.fw-topic-status{
+  position:absolute;top:12px;right:12px;font-size:11px;font-weight:700;
+  padding:3px 9px;border-radius:6px;background:rgba(78,205,196,.9);color:#06231f;
+}
+.fw-topic-status.fw-updating{background:rgba(255,209,102,.92);color:#2a1f00;}
+.fw-topic-body{padding:17px 18px 19px;}
+.fw-topic-body h3{font-size:16.5px;margin-bottom:8px;}
+.fw-topic-body p{font-size:13px;color:var(--fw-sub);margin-bottom:12px;}
+.fw-topic-info{display:flex;justify-content:space-between;font-size:12px;color:#6f7d8e;}
+
+/* ============ 创作者 ============ */
+.fw-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;}
+.fw-creator{
+  background:var(--fw-card);border:1px solid var(--fw-line);border-radius:var(--fw-radius);
+  padding:22px 18px;text-align:center;transition:.28s;cursor:pointer;
+}
+.fw-creator:hover{transform:translateY(-4px);border-color:rgba(255,77,61,.4);background:#1e2631;}
+.fw-creator-avatar{
+  width:64px;height:64px;border-radius:50%;margin:0 auto 14px;
+  display:grid;place-items:center;font-size:23px;font-weight:900;color:#0e1116;
+  box-shadow:0 0 0 4px rgba(255,255,255,.06);
+}
+.fw-creator h3{font-size:15.5px;margin-bottom:4px;}
+.fw-creator .fw-field{font-size:12px;color:var(--fw-accent2);margin-bottom:9px;}
+.fw-creator p{font-size:12.5px;color:var(--fw-sub);line-height:1.7;margin-bottom:12px;min-height:60px;}
+.fw-creator-stats{display:flex;justify-content:center;gap:16px;font-size:11.5px;color:#6f7d8e;}
+.fw-creator-stats b{display:block;color:var(--fw-txt);font-size:14px;font-weight:800;}
+
+/* ============ 影像墙 ============ */
+.fw-wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:130px;gap:14px;}
+.fw-wall-item{
+  position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--fw-line);
+  cursor:pointer;
+}
+.fw-wall-item img{width:100%;height:100%;object-fit:cover;transition:.45s;}
+.fw-wall-item:hover img{transform:scale(1.08);}
+.fw-wall-item figcaption{
+  position:absolute;inset:auto 0 0 0;padding:10px 12px;font-size:12px;color:#fff;
+  background:linear-gradient(180deg,transparent,rgba(0,0,0,.8));
+  opacity:0;transition:.3s;
+}
+.fw-wall-item:hover figcaption{opacity:1;}
+.fw-wall-lg{grid-column:span 2;grid-row:span 2;}
+.fw-wall-wide{grid-column:span 2;}
+
+/* ============ 评价 ============ */
+.fw-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.fw-review{
+  background:var(--fw-card);border:1px solid var(--fw-line);border-radius:14px;padding:18px;
+  display:flex;flex-direction:column;gap:11px;transition:.25s;
+}
+.fw-review:hover{border-color:rgba(255,209,102,.35);}
+.fw-review-head{display:flex;align-items:center;gap:10px;}
+.fw-review-head .fw-avatar{width:34px;height:34px;font-size:13px;}
+.fw-review-head b{font-size:14px;display:block;line-height:1.3;}
+.fw-review-head span{font-size:11px;color:#6f7d8e;}
+.fw-review p{font-size:13.5px;color:var(--fw-sub);}
+.fw-review .fw-stars{color:var(--fw-accent2);font-size:12px;letter-spacing:2px;}
+
+/* ============ 动态 ============ */
+.fw-news-list{display:grid;gap:14px;}
+.fw-news-item{
+  display:grid;grid-template-columns:110px 1fr auto;gap:18px;align-items:center;
+  background:var(--fw-card);border:1px solid var(--fw-line);border-radius:13px;
+  padding:16px 20px;transition:.25s;
+}
+.fw-news-item:hover{border-color:rgba(255,77,61,.35);background:#1e2631;}
+.fw-news-date{font-size:12px;color:var(--fw-accent);font-weight:700;letter-spacing:.04em;}
+.fw-news-item h3{font-size:15px;font-weight:600;}
+.fw-news-item p{font-size:12.5px;color:#6f7d8e;margin-top:3px;}
+.fw-news-more{font-size:12.5px;color:var(--fw-sub);white-space:nowrap;}
+.fw-news-item:hover .fw-news-more{color:var(--fw-accent2);}
+
+/* ============ FAQ ============ */
+.fw-faq{display:grid;gap:12px;max-width:900px;}
+.fw-faq details{
+  background:var(--fw-card);border:1px solid var(--fw-line);border-radius:12px;
+  padding:0 20px;transition:.25s;
+}
+.fw-faq details[open]{border-color:rgba(255,77,61,.4);}
+.fw-faq summary{
+  cursor:pointer;padding:16px 0;font-size:14.5px;font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;
+}
+.fw-faq summary::-webkit-details-marker{display:none;}
+.fw-faq summary::after{content:"+";font-size:20px;color:var(--fw-accent);font-weight:400;line-height:1;transition:.25s;}
+.fw-faq details[open] summary::after{transform:rotate(45deg);}
+.fw-faq .fw-faq-ans{padding:0 0 18px;font-size:13.5px;color:var(--fw-sub);}
+
+/* ============ 联系/投稿 ============ */
+.fw-cta{
+  position:relative;border-radius:22px;overflow:hidden;
+  background:linear-gradient(130deg,rgba(255,77,61,.18),rgba(78,205,196,.12)),var(--fw-card);
+  border:1px solid var(--fw-line);padding:clamp(28px,5vw,56px);
+  display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(24px,4vw,48px);align-items:center;
+}
+.fw-cta h2{font-size:clamp(22px,3vw,32px);line-height:1.3;margin-bottom:14px;}
+.fw-cta p{color:var(--fw-sub);font-size:14.5px;margin-bottom:24px;max-width:520px;}
+.fw-cta-actions{display:flex;flex-wrap:wrap;gap:12px;}
+.fw-cta-side{display:grid;gap:12px;}
+.fw-cta-side div{
+  background:rgba(0,0,0,.28);border:1px solid var(--fw-line);border-radius:12px;
+  padding:14px 18px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--fw-sub);
+}
+.fw-cta-side b{color:var(--fw-txt);font-size:15px;}
+
+/* ============ 页脚 ============ */
+.fw-footer{border-top:1px solid var(--fw-line);padding:clamp(38px,5vw,60px) 0 26px;background:rgba(10,13,17,.6);}
+.fw-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:clamp(22px,3vw,44px);margin-bottom:36px;}
+.fw-footer-brand p{font-size:13px;color:var(--fw-sub);margin-top:14px;max-width:340px;}
+.fw-footer h4{font-size:13px;letter-spacing:.12em;color:var(--fw-txt);margin-bottom:14px;text-transform:uppercase;}
+.fw-footer ul li{margin-bottom:9px;}
+.fw-footer ul a{font-size:13px;color:var(--fw-sub);transition:.2s;}
+.fw-footer ul a:hover{color:var(--fw-accent2);}
+.fw-footer-bottom{
+  border-top:1px solid var(--fw-line);padding-top:22px;
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;
+  font-size:12px;color:#6f7d8e;
+}
+.fw-footer-bottom a{color:#8b97a7;}
+
+/* ============ Toast / 弹窗 ============ */
+.fw-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+  background:#232c37;border:1px solid var(--fw-line);color:var(--fw-txt);
+  padding:11px 22px;border-radius:11px;font-size:13px;
+  box-shadow:var(--fw-shadow);z-index:2000;opacity:0;pointer-events:none;transition:.3s;
+}
+.fw-toast.fw-show{opacity:1;transform:translate(-50%,0);}
+.fw-modal{
+  position:fixed;inset:0;z-index:1900;display:grid;place-items:center;
+  background:rgba(5,8,12,.72);backdrop-filter:blur(6px);
+  opacity:0;pointer-events:none;transition:.25s;padding:20px;
+}
+.fw-modal.fw-show{opacity:1;pointer-events:auto;}
+.fw-modal-box{
+  background:var(--fw-bg2);border:1px solid var(--fw-line);border-radius:18px;
+  padding:clamp(22px,3vw,34px);max-width:520px;width:100%;
+  box-shadow:var(--fw-shadow);transform:translateY(14px);transition:.25s;
+  position:relative;
+}
+.fw-modal.fw-show .fw-modal-box{transform:translateY(0);}
+.fw-modal-box h3{font-size:20px;margin-bottom:8px;}
+.fw-modal-box > p{font-size:13.5px;color:var(--fw-sub);margin-bottom:20px;}
+.fw-modal-close{position:absolute;top:14px;right:16px;font-size:20px;color:var(--fw-sub);line-height:1;padding:4px;}
+.fw-modal-close:hover{color:var(--fw-txt);}
+.fw-field-group{margin-bottom:15px;}
+.fw-field-group label{display:block;font-size:12.5px;color:var(--fw-sub);margin-bottom:6px;}
+.fw-field-group input,.fw-field-group textarea{
+  width:100%;background:var(--fw-bg);border:1px solid var(--fw-line);border-radius:10px;
+  padding:10px 13px;color:var(--fw-txt);font-size:13.5px;outline:none;transition:.2s;resize:vertical;
+}
+.fw-field-group input:focus,.fw-field-group textarea:focus{border-color:rgba(255,77,61,.55);}
+.fw-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px;}
+.fw-share-row{display:flex;flex-wrap:wrap;gap:10px;}
+.fw-share-row button{
+  flex:1 1 100px;padding:10px;border-radius:10px;font-size:13px;
+  background:var(--fw-bg);border:1px solid var(--fw-line);color:var(--fw-sub);transition:.2s;
+}
+.fw-share-row button:hover{color:var(--fw-txt);border-color:rgba(255,77,61,.45);}
+.fw-backtop{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:12px;
+  background:var(--fw-card);border:1px solid var(--fw-line);display:grid;place-items:center;
+  color:var(--fw-sub);z-index:800;opacity:0;pointer-events:none;transition:.3s;
+  box-shadow:var(--fw-shadow);
+}
+.fw-backtop.fw-show{opacity:1;pointer-events:auto;}
+.fw-backtop:hover{color:var(--fw-accent);border-color:rgba(255,77,61,.45);}
+.fw-backtop svg{width:18px;height:18px;}
+
+.fw-noresult{
+  display:none;padding:28px;text-align:center;color:var(--fw-sub);font-size:14px;
+  border:1px dashed var(--fw-line);border-radius:14px;grid-column:1/-1;
+}
+.fw-noresult.fw-show{display:block;}
+
+/* ============ 响应式 ============ */
+@media (max-width:1080px){
+  .fw-hero-grid{grid-template-columns:1fr;gap:34px;}
+  .fw-about-grid{grid-template-columns:1fr;}
+  .fw-video-grid,.fw-topic-grid,.fw-review-grid{grid-template-columns:repeat(2,1fr);}
+  .fw-creator-grid{grid-template-columns:repeat(2,1fr);}
+  .fw-cta{grid-template-columns:1fr;}
+  .fw-footer-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:900px){
+  .fw-nav,.fw-search{display:none;}
+  .fw-burger{display:grid;}
+  .fw-header-tools .fw-btn-ghost{display:none;}
+  .fw-focus-grid{grid-template-columns:1fr;}
+  .fw-wall{grid-template-columns:repeat(2,1fr);}
+  .fw-news-item{grid-template-columns:90px 1fr;}
+  .fw-news-more{display:none;}
+}
+@media (max-width:640px){
+  .fw-announce{padding:7px 16px;font-size:12px;}
+  .fw-announce-tag{display:none;}
+  .fw-video-grid,.fw-topic-grid,.fw-review-grid,.fw-creator-grid,.fw-focus-sm{grid-template-columns:1fr;}
+  .fw-footer-grid{grid-template-columns:1fr;}
+  .fw-wall{grid-template-columns:1fr 1fr;grid-auto-rows:110px;}
+  .fw-wall-lg{grid-column:span 2;grid-row:span 1;}
+  .fw-hero-float{right:8px;bottom:-18px;font-size:11px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶：公告条 + 页头 -->
+<div class="fw-sticky-shell" id="fwTop">
+  <div class="fw-announce">
+    <span class="fw-announce-tag">官方发布</span>
+    <div class="fw-announce-track">
+      <ul>
+        <li><b>11月18日</b> 专题《2025欧美大片·科技叙事》第二集上线，收录4部高口碑作品解析</li>
+        <li><b>11月15日</b> 创作者挑战赛「我的年度片单」开放报名，已收到 1,286 份投稿</li>
+        <li><b>11月12日</b> 官方高清片库更新：8部作品新增导演访谈与幕后花絮</li>
+        <li><b>11月18日</b> 专题《2025欧美大片·科技叙事》第二集上线，收录4部高口碑作品解析</li>
+        <li><b>11月15日</b> 创作者挑战赛「我的年度片单」开放报名，已收到 1,286 份投稿</li>
+        <li><b>11月12日</b> 官方高清片库更新：8部作品新增导演访谈与幕后花絮</li>
+      </ul>
+    </div>
+  </div>
+  <header class="fw-header">
+    <a class="fw-brand" href="#fwTop">
+      <span class="fw-brand-mark">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M8 5 L19 12 L8 19 Z" fill="#fff"/></svg>
+      </span>
+      <span class="fw-brand-name">影界<small>FILMREALM</small></span>
+    </a>
+    <nav class="fw-nav" aria-label="主导航">
+      <a href="#fw-hero" class="fw-active">首页</a>
+      <a href="#fw-focus">焦点内容</a>
+      <a href="#fw-topic">专题企划</a>
+      <a href="#fw-creator">创作者</a>
+      <a href="#fw-wall">影像墙</a>
+      <a href="#fw-news">企业动态</a>
+      <a href="#fw-faq">帮助</a>
+      <a href="#fw-contact">联系</a>
+    </nav>
+    <div class="fw-header-tools">
+      <div class="fw-search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="fwSearchInput" placeholder="搜索片名 / 创作者 / 专题" aria-label="站内搜索">
+      </div>
+      <a href="#fw-contact" class="fw-btn-ghost">投稿</a>
+      <button class="fw-btn-primary" id="fwJoinBtn">加入社区</button>
+      <button class="fw-burger" id="fwBurger" aria-label="展开导航" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="fw-mobile-nav" id="fwMobileNav" aria-label="移动端导航">
+    <a href="#fw-hero">首页</a>
+    <a href="#fw-focus">焦点内容</a>
+    <a href="#fw-topic">专题企划</a>
+    <a href="#fw-creator">创作者</a>
+    <a href="#fw-wall">影像墙</a>
+    <a href="#fw-news">企业动态</a>
+    <a href="#fw-faq">帮助</a>
+    <a href="#fw-contact">联系与投稿</a>
+  </nav>
+</div>
+
+<main>
+
+<!-- 首屏 -->
+<section class="fw-hero" id="fw-hero">
+  <div class="fw-wrap">
+    <div class="fw-hero-grid">
+      <div>
+        <span class="fw-hero-badge"><i></i>品牌官方网站 · 2025 全球片单季</span>
+        <h1 class="fw-hero-title">2025欧美大片</h1>
+        <p class="fw-hero-sub">聚焦重磅影片的原创影像内容，记录每一帧值得被讨论的画面</p>
+        <p class="fw-hero-lead">影界是面向全球电影爱好者的高品质视频社区。我们以品牌之力聚合专业影评人、独立创作者与行业观察者，围绕 2025 年欧美重点影片，持续产出深度解读、幕后记录与创作向内容，构建值得信赖的内容生态。</p>
+        <div class="fw-hero-actions">
+          <a href="#fw-focus" class="fw-btn-primary">进入焦点片单</a>
+          <a href="#fw-topic" class="fw-btn-ghost">查看专题企划</a>
+        </div>
+        <div class="fw-hero-stats">
+          <div class="fw-stat"><b data-count="1286">0</b><span>原创内容作品</span></div>
+          <div class="fw-stat"><b data-count="86">0</b><span>签约创作者</span></div>
+          <div class="fw-stat"><b data-count="420">0</b><span>万累计播放</span></div>
+        </div>
+      </div>
+      <div class="fw-hero-visual">
+        <div class="fw-hero-frame">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23111826'/%3E%3Cstop offset='55%' stop-color='%23233a52'/%3E%3Cstop offset='100%' stop-color='%23ff4d3d'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='1' x2='0' y2='0'%3E%3Cstop offset='0' stop-color='%230b0f16' stop-opacity='.95'/%3E%3Cstop offset='1' stop-color='%230b0f16' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='400' fill='url(%23g1)'/%3E%3Ccircle cx='500' cy='90' r='120' fill='%23ffd166' opacity='.16'/%3E%3Ccircle cx='120' cy='310' r='150' fill='%234ecdc4' opacity='.12'/%3E%3Cpath d='M0 320 L120 240 L240 300 L360 210 L500 280 L640 200 L640 400 L0 400 Z' fill='%23090d14' opacity='.65'/%3E%3Crect width='640' height='400' fill='url(%23g2)'/%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='.28' stroke-width='1.4'%3E%3Cpath d='M60 60 h60 M60 60 v40'/%3E%3Cpath d='M580 60 h-60 M580 60 v40'/%3E%3Cpath d='M60 340 h60 M60 340 v-40'/%3E%3Cpath d='M580 340 h-60 M580 340 v-40'/%3E%3C/g%3E%3C/svg%3E" alt="2025欧美大片品牌主视觉：城市天际线与电影画面质感">
+          <div class="fw-hero-play">
+            <span class="fw-play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5 L19 12 L8 19 Z"/></svg>
+            </span>
+          </div>
+          <div class="fw-hero-cap"><span>品牌主视觉</span><span>FILMREALM · 2025</span></div>
+        </div>
+        <div class="fw-hero-float">
+          <b>86</b>
+          <div>签约创作者<br>持续更新中</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 关键词深度解析 -->
+<section class="fw-section fw-about" id="fw-about">
+  <div class="fw-wrap">
+    <div class="fw-section-head">
+      <div>
+        <span class="fw-eyebrow">品牌解析</span>
+        <h2 class="fw-h2">为什么我们关注<em>2025欧美大片</em></h2>
+      </div>
+    </div>
+    <div class="fw-about-grid">
+      <div class="fw-about-card">
+        <h3>影界 · 官方网站</h3>
+        <p>作为一家深耕影像内容的视频品牌，影界以「专业、原创、正版、高清」为内容底线，围绕 2025 年欧美重点影片搭建从资讯到解读、从幕后到共创的完整链条。我们相信，一部影片的价值不止于放映的两小时，更在于它引发的讨论与陪伴。</p>
+        <p>平台聚合了影评人、剪辑师、影视从业者与普通影迷，通过创作者矩阵与内容生态，让每一份观察都有被看见的可能。</p>
+        <ul class="fw-about-list">
+          <li><b>内容理念</b><span>垂直领域深耕，坚持原创与正版，拒绝搬运拼凑。</span></li>
+          <li><b>社区结构</b><span>创作者、影迷、行业从业者三方共建的真实讨论场。</span></li>
+          <li><b>品质标准</b><span>所有高清素材均来自官方授权渠道，画面与声音双重校验。</span></li>
+          <li><b>长期主义</b><span>持续运营、迭代内容，以口碑积累用户首选的地位。</span></li>
+        </ul>
+      </div>
+      <article class="fw-about-article">
+        <h3>一、2025 欧美大片的内容语境</h3>
+        <p>进入 2025 年，欧美影片在叙事与技术两条主线上的交织变得更为紧密。一方面，大制作续集与重启项目继续占据市场话题中心，观众对世界观完整度、角色弧光的要求明显提高；另一方面，中等成本作者电影在流媒体与院线之间寻找新的平衡点，带来了更丰富的表达样本。对于影界而言，<strong>2025欧美大片</strong>并不只是一个片单标签，而是一个需要被拆解、被理解、被讨论的内容集合。</p>
+        <p>我们在首页聚焦的不是简单的热度排行，而是带着问题意识去组织内容：这部作品为什么在这个时间点出现？它回应了当下观众怎样的情绪？技术升级究竟服务于叙事，还是仅仅成为卖点？这些问题构成了影界内容生态的底层逻辑，也让我们的专题具备可持续的深度。</p>
+        <h3>二、从资讯到解读：四条内容主线</h3>
+        <p>影界的 2025 片单内容被组织为四条主线。第一条是<strong>首发资讯与官方发布</strong>，及时同步项目立项、预告物料、上映窗口与主创构成；第二条是<strong>深度解读</strong>，由专业影评人和影视从业者从剧作、摄影、配乐、剪辑等维度拆解作品；第三条是<strong>幕后与创作记录</strong>，通过导演访谈、剧组侧记、特效流程拆解，让观众看到画面之外的工序；第四条是<strong>社区共创</strong>，鼓励影迷上传自己的观后感短片、手绘海报与混剪作品，形成多声部的讨论场。</p>
+        <p class="fw-tagline">我们始终认为，好的内容社区不是替观众下结论，而是提供更丰富的观看角度。</p>
+        <h3>三、创作者是内容生态的核心</h3>
+        <p>在影界，创作者不是流量的附庸，而是品牌价值的共同建造者。我们为签约创作者提供高清素材支持、选题共创、剪辑工具与分发策略建议，并设有固定的作品孵化计划。2025 年，平台围绕欧美影片推出了「幕后工坊」「年度片单挑战」「一镜到底实验室」等系列企划，让不同风格的创作者都能找到适合自己的表达出口。截至目前，已有 86 位创作者参与签约计划，累计产出 1286 条原创内容。</p>
+        <p>这种机制带来的直接结果是内容的多元与包容：有人偏爱用长镜头语言复盘经典场面，有人擅长以三分钟快节奏混剪传递情绪，也有人专注做冷门佳作的科普。不同表达在同一个平台上共存，构成了影界最珍贵的社区资产。</p>
+        <h3>四、品牌责任与长期陪伴</h3>
+        <p>作为持续运营的视频品牌，影界在追求影响力的同时，也重视社会责任。我们坚持不使用未经授权的素材，尊重每一部作品的版权；在内容审核上，我们遮蔽剧透关键情节，为尚未观看的观众保留完整体验；在社区治理上，我们鼓励理性讨论，反对以情绪化攻击代替观点表达。我们希望影界是一个温暖而有力量的地方——真实、专业、值得信赖。</p>
+        <p>2025 年的欧美影片市场仍在快速变化，新的发行模式、新的技术手段、新的观众结构都在重塑行业。影界会继续以匠心打磨内容，以创新回应变化，与创作者和影迷一起，把每一年的好作品都认真记录下来。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 焦点内容 -->
+<section class="fw-section" id="fw-focus">
+  <div class="fw-wrap">
+    <div class="fw-section-head">
+      <div>
+        <span class="fw-eyebrow">焦点内容</span>
+        <h2 class="fw-h2">本周必看的<em>重磅片单与深度解读</em></h2>
+        <p class="fw-section-desc">由官方编辑部与签约创作者共同筛选，覆盖首映资讯、专业影评与幕后记录。</p>
+      </div>
+    </div>
+
+    <div class="fw-focus-grid">
+      <a class="fw-focus-main" href="#fw-focus" aria-label="查看焦点视频：星际回响首映观察">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23080b12'/%3E%3Cstop offset='45%' stop-color='%231c2b45'/%3E%3Cstop offset='100%' stop-color='%234ecdc4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f1)'/%3E%3Cg fill='%23ffffff' opacity='.85'%3E%3Ccircle cx='120' cy='80' r='2'/%3E%3Ccircle cx='240' cy='45' r='1.6'/%3E%3Ccircle cx='420' cy='70' r='2.2'/%3E%3Ccircle cx='530' cy='120' r='1.5'/%3E%3Ccircle cx='320' cy='130' r='1.8'/%3E%3Ccircle cx='80' cy='190' r='1.7'/%3E%3Ccircle cx='590' cy='220' r='2'/%3E%3C/g%3E%3Ccircle cx='420' cy='210' r='86' fill='%23ffd166' opacity='.18'/%3E%3Cpath d='M0 300 Q160 230 320 290 T640 260 L640 360 L0 360 Z' fill='%23070a10' opacity='.8'/%3E%3C/svg%3E" alt="《星际回响》首映观察焦点封面：星空与轨道光晕">
+        <div class="fw-focus-mask">
+          <div class="fw-focus-chips"><span class="fw-chip">首发资讯</span><span class="fw-chip">深度解读</span></div>
+          <h3>《星际回响》：当硬核科幻重新学会讲人情</h3>
+          <p>从原创设定到情感内核，主创团队用一场宏大的星际旅行回应了当下观众对「连接」的渴望。</p>
+        </div>
+      </a>
+      <a class="fw-focus-main" href="#fw-focus" aria-label="查看焦点视频：长夜列车摄影解析">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='f2' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23101018'/%3E%3Cstop offset='60%' stop-color='%23322a3d'/%3E%3Cstop offset='100%' stop-color='%23ff4d3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23f2)'/%3E%3Crect x='60' y='90' width='520' height='180' rx='8' fill='%23090b10' opacity='.55'/%3E%3Cg stroke='%23ffd166' stroke-width='2' opacity='.6'%3E%3Cpath d='M90 250 L90 120'/%3E%3Cpath d='M190 250 L190 140'/%3E%3Cpath d='M290 250 L290 110'/%3E%3Cpath d='M390 250 L390 150'/%3E%3Cpath d='M490 250 L490 130'/%3E%3C/g%3E%3Ccircle cx='540' cy='70' r='42' fill='%23ff4d3d' opacity='.35'/%3E%3C/svg%3E" alt="《长夜列车》摄影解析焦点封面：夜行列车窗格光影">
+        <div class="fw-focus-mask">
+          <div class="fw-focus-chips"><span class="fw-chip">幕后工坊</span><span class="fw-chip">摄影解析</span></div>
+          <h3>《长夜列车》摄影解析：一盏灯如何撑起半部戏</h3>
+          <p>摄影师用极简光源塑造封闭空间里的心理张力，这期幕后工坊带你看懂光影的叙事逻辑。</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="fw-focus-sm" id="fwVideoGrid">
+      <article class="fw-vcard" data-keys="2025欧美大片 星际回响 科幻">
+        <div class="fw-vcover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='s1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b1626'/%3E%3Cstop offset='100%' stop-color='%232f5f8f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23s1)'/%3E%3Ccircle cx='380' cy='70' r='48' fill='%234ecdc4' opacity='.4'/%3E%3Cpath d='M0 210 Q120 150 240 205 T480 180 L480 270 L0 270 Z' fill='%23070a10' opacity='.75'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.3' fill='none'%3E%3Cpath d='M60 60 h40 M60 60 v30'/%3E%3C/g%3E%3C/svg%3E" alt="《星际回响》世界观设定解析封面">
+          <span class="fw-vtag">深度解读</span><span class="fw-vdur">12:48</span>
+          <div class="fw-vplay"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5 L19 12 L8 19 Z"/></svg></span></div>
+        </div>
+        <div class="fw-vbody">
+          <h3 class="fw-vtitle">《星际回响》世界观设定解析：三条规则如何自洽</h3>
+          <p class="fw-vdesc">编剧团队用三条物理规则搭建起整个故事，我们把散落在台词里的线索按时间顺序重新梳理了一遍。</p>
+          <div class="fw-vmeta">
+            <span class="fw-author"><span class="fw-avatar" style="background:#4ecdc4">陈</span>陈默</span>
+            <span class="fw-vact">
+              <button class="fw-act-btn fw-like" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9zM7 11l4-7c1.3 0 2 .9 2 2v3h5a2 2 0 0 1 2 2.3l-1.4 7A2 2 0 0 1 16.6 20H7"/></svg><span>862</span></button>
+              <button class="fw-act-btn fw-fav" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.4A4 4 0 0 1 12 7a4 4 0 0 1 7 3.6c0 5-7 9.4-7 9.4z"/></svg></button>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="fw-vcard" data-keys="2025欧美大片 长夜列车 摄影">
+        <div class="fw-vcover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='s2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23221a2b'/%3E%3Cstop offset='100%' stop-color='%23ff4d3d'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23s2)'/%3E%3Cg stroke='%23ffd166' stroke-width='3' opacity='.55'%3E%3Cpath d='M80 200 L80 60'/%3E%3Cpath d='M180 200 L180 100'/%3E%3Cpath d='M280 200 L280 50'/%3E%3Cpath d='M380 200 L380 110'/%3E%3C/g%3E%3Crect x='60' y='40' width='360' height='180' fill='none' stroke='%23ffffff' stroke-opacity='.2'/%3E%3C/svg%3E" alt="《长夜列车》光影设计幕后封面">
+          <span class="fw-vtag">幕后工坊</span><span class="fw-vdur">09:26</span>
+          <div class="fw-vplay"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5 L19 12 L8 19 Z"/></svg></span></div>
+        </div>
+        <div class="fw-vbody">
+          <h3 class="fw-vtitle">《长夜列车》光影设计幕后：一镜到底的灯光调度</h3>
+          <p class="fw-vdesc">七分钟的连续镜头，灯光组只用了四盏可移动光源，这是调度手稿与现场执行的完整复盘。</p>
+          <div class="fw-vmeta">
+            <span class="fw-author"><span class="fw-avatar" style="background:#ffd166">林</span>林知远</span>
+            <span class="fw-vact">
+              <button class="fw-act-btn fw-like" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9zM7 11l4-7c1.3 0 2 .9 2 2v3h5a2 2 0 0 1 2 2.3l-1.4 7A2 2 0 0 1 16.6 20H7"/></svg><span>641</span></button>
+              <button class="fw-act-btn fw-fav" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.4A4 4 0 0 1 12 7a4 4 0 0 1 7 3.6c0 5-7 9.4-7 9.4z"/></svg></button>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="fw-vcard" data-keys="2025欧美大片 沉默的季节 文艺片">
+        <div class="fw-vcover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='s3' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e6d6bf'/%3E%3Cstop offset='100% stop-color='%238a6b4a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='%23d9c6a8'/%3E%3Ccircle cx='360' cy='80' r='46' fill='%23f2e2c4' opacity='.9'/%3E%3Cpath d='M0 230 L120 170 L240 210 L360 150 L480 200 L480 270 L0 270 Z' fill='%237a5f45' opacity='.85'/%3E%3Cpath d='M0 250 L150 210 L300 245 L480 215 L480 270 L0 270 Z' fill='%23413a30' opacity='.8'/%3E%3C/svg%3E" alt="《沉默的季节》影评封面：暖色原野与低垂日影">
+          <span class="fw-vtag">专业影评</span><span class="fw-vdur">15:03</span>
+          <div class="fw-vplay"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5 L19 12 L8 19 Z"/></svg></span></div>
+        </div>
+        <div class="fw-vbody">
+          <h3 class="fw-vtitle">《沉默的季节》影评：克制，是今年最有力的叙事</h3>
+          <p class="fw-vdesc">没有配乐铺垫，没有台词的宣泄，这部电影用大量的留白完成了一次关于失去的漫长告别。</p>
+          <div class="fw-vmeta">
+            <span class="fw-author"><span class="fw-avatar" style="background:#ff9f76">苏</span>苏晚</span>
+            <span class="fw-vact">
+              <button class="fw-act-btn fw-like" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9zM7 11l4-7c1.3 0 2 .9 2 2v3h5a2 2 0 0 1 2 2.3l-1.4 7A2 2 0 0 1 16.6 20H7"/></svg><span>1204</span></button>
+              <button class="fw-act-btn fw-fav" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.4A4 4 0 0 1 12 7a4 4 0 0 1 7 3.6c0 5-7 9.4-7 9.4z"/></svg></button>
+            </span>
+          </div>
+        </div>
+      </article>
+
+      <article class="fw-vcard" data-keys="2025欧美大片 城市边缘 城市探索">
+        <div class="fw-vcover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='s4' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%230d1b2a'/%3E%3Cstop offset='100%' stop-color='%23477b9e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23s4)'/%3E%3Cg fill='%23091018' opacity='.9'%3E%3Crect x='30' y='120' width='60' height='150'/%3E%3Crect x='110' y='70' width='52' height='200'/%3E%3Crect x='182' y='140' width='46' height='130'/%3E%3Crect x='248' y='50' width='64' height='220'/%3E%3Crect x='332' y='110' width='48' height='160'/%3E%3Crect x='400' y='90' width='56' height='180'/%3E%3C/g%3E%3Cg fill='%23ffd166' opacity='.75'%3E%3Crect x='120' y='90' width='8' height='8'/%3E%3Crect x='140' y='120' width='8' height='8'/%3E%3Crect x='262' y='76' width='8' height='8'/%3E%3Crect x='286' y='110' width='8' height='8'/%3E%3Crect x='412' y='116' width='8' height='8'/%3E%3C/g%3E%3C/svg%3E" alt="《城市边缘》夜行记录封面：高楼灯光与街景">
+          <span class="fw-vtag">城市探索</span><span class="fw-vdur">08:17</span>
+          <div class="fw-vplay"><span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5 L19 12 L8 19 Z"/></svg></span></div>
+        </div>
+        <div class="fw-vbody">
+          <h3 class="fw-vtitle">《城市边缘》夜行记录：取景地里的真实生活</h3>
+          <p class="fw-vdesc">我们沿着电影中的街道走了三个夜晚，记录下镜头之外仍在营业的便利店与深夜食堂。</p>
+          <div class="fw-vmeta">
+            <span class="fw-author"><span class="fw-avatar" style="background:#7cc6d6">周</span>周予行</span>
+            <span class="fw-vact">
+              <button class="fw-act-btn fw-like" aria-label="点赞"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11v9H4v-9zM7 11l4-7c1.3 0 2 .9 2 2v3h5a2 2 0 0 1 2 2.3l-1.4 7A2 2 0 0 1 16.6 20H7"/></svg><span>503</span></button>
+              <button class="fw-act-btn fw-fav" aria-label="收藏"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20s-7-4.4-7-9.4A4 4 0 0 1 12 7a4 4 0 0 1 7 3.6c0 5-7 9.4-7 9.4z"/></svg></button>
+            </span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 专题企划 -->
+<section class="fw-section" id="fw-topic" style="border-top:1px solid var(--fw-line);background:rgba(21,26,33,.35);">
+  <div class="fw-wrap">
+    <div class="fw-section-head">
+      <div>
+        <span class="fw-eyebrow">专题企划</span>
+        <h2 class="fw-h2">围绕<em>年度影片</em>的系列化内容</h2>
+        <p class="fw-section-desc">专题是我们组织深度内容的方式，每个企划持续更新，形成可回溯的内容体系。</p>
+      </div>
+    </div>
+    <div class="fw-topic-grid">
+      <article class="fw-topic fw-card">
+        <div class="fw-topic-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Cdefs%3E%3ClinearGradient id='t1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230c1a2b'/%3E%3Cstop offset='100%' stop-color='%233d6f8f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='300' fill='url(%23t1)'/%3E%3Cg stroke='%234ecdc4' stroke-opacity='.55' fill='none' stroke-width='1.5'%3E%3Ccircle cx='240' cy='150' r='60'/%3E%3Ccircle cx='240' cy='150' r='100'/%3E%3Ccircle cx='240' cy='150' r='140'/%3E%3C/g%3E%3Ccircle cx='240' cy='150' r='26' fill='%23ffd166' opacity='.8'/%3E%3C/svg%3E" alt="专题《科技叙事与银幕奇观》封面：同心圆与技术光环">
+          <span class="fw-topic-status fw-updating">更新中</span>
+        </div>
+        <div class="fw-topic-body">
+          <h3>专题 · 科技叙事与银幕奇观</h3>
+          <p>从视觉特效到世界观设定，拆解 2025 年欧美影片中技术与叙事的相互成就。</p>
+          <div class="fw-topic-info"><span>已更新 6 集</span><span>12.6 万阅读</span></div>
+        </div>
+      </article>
+      <article class="fw-topic fw-card">
+        <div class="fw-topic-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Cdefs%3E%3ClinearGradient id='t2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%232b1a1a'/%3E%3Cstop offset='100%' stop-color='%23a83226'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='300' fill='url(%23t2)'/%3E%3Cg fill='%23ffd166' opacity='.7'%3E%3Crect x='40' y='120' width='40' height='180'/%3E%3Crect x='100' y='80' width='40' height='220'/%3E%3Crect x='160' y='150' width='40' height='150'/%3E%3Crect x='220' y='60' width='40' height='240'/%3E%3Crect x='280' y='110' width='40' height='190'/%3E%3Crect x='340' y='90' width='40' height='210'/%3E%3Crect x='400' y='140' width='40' height='160'/%3E%3C/g%3E%3C/svg%3E" alt="专题《幕后工坊：从剧本到银幕》封面：阶梯状暖色光柱">
+          <span class="fw-topic-status">已完结</span>
+        </div>
+        <div class="fw-topic-body">
+          <h3>专题 · 幕后工坊：从剧本到银幕</h3>
+          <p>访谈导演、摄影与剪辑团队，还原一部影片从立项到定剪的完整工序。</p>
+          <div class="fw-topic-info"><span>共 8 集</span><span>18.4 万阅读</span></div>
+        </div>
+      </article>
+      <article class="fw-topic fw-card">
+        <div class="fw-topic-img">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Cdefs%3E%3ClinearGradient id='t3' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%231b2b22'/%3E%3Cstop offset='100%' stop-color='%236d9b6a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='300' fill='url(%23t3)'/%3E%3Cpath d='M0 240 L100 180 L200 220 L300 150 L400 200 L480 170 L480 300 L0 300 Z' fill='%230f1d14' opacity='.85'/%3E%3Ccircle cx='360' cy='70' r='34' fill='%23f2e2c4' opacity='.8'/%3E%3C/svg%3E" alt="专题《冷门佳作观察手册》封面：绿色丘陵与晨光">
+          <span class="fw-topic-status fw-updating">更新中</span>
+        </div>
+        <div class="fw-topic-body">
+          <h3>专题 · 冷门佳作观察手册</h3>
+          <p>没有大场面与强宣发，这些作品靠细腻表达赢得口碑，值得被更多人看见。</p>
+          <div class="fw-topic-info"><span>已更新 5 集</span><span>9.8 万阅读</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 创作者矩阵 -->
+<section class="fw-section" id="fw-creator">
+  <div class="fw-wrap">
+    <div class="fw-section-head">
+      <div>
+        <span class="fw-eyebrow">创作者矩阵</span>
+        <h2 class="fw-h2">内容生态的<em>共建者</em></h2>
+        <p class="fw-section-desc">他们来自影视制作、影评写作、剪辑创作与影像研究等不同方向，共同构成影界的多元表达。</p>
+      </div>
+    </div>
+    <div class="fw-creator-grid">
+      <article class="fw-creator" data-name="陈默" data-field="科幻设定研究" data-works="86" data-fans="12.4 万" tabindex="0" role="button" aria-label="查看创作者陈默的资料">
+        <div class="fw-creator-avatar" style="background:linear-gradient(140deg,#4ecdc4,#1b7f88)">陈</div>
+        <h3>陈默</h3>
+        <p class="fw-field">科幻设定研究</p>
+        <p>关注硬科幻里的逻辑自洽，擅长把复杂设定讲成清楚的故事线。</p>
+        <div class="fw-creator-stats"><span><b>86</b>作品</span><span><b>12.4万</b>粉丝</span></div>
+      </article>
+      <article class="fw-creator" data-name="林知远" data-field="摄影与灯光" data-works="64" data-fans="9.7 万" tabindex="0" role="button" aria-label="查看创作者林知远的资料">
+        <div class="fw-creator-avatar" style="background:linear-gradient(140deg,#ffd166,#c98b1f)">林</div>
+        <h3>林知远</h3>
+        <p class="fw-field">摄影与灯光</p>
+        <p>从业十年的摄影指导，喜欢用一张现场图讲清楚一个技术选择。</p>
+        <div class="fw-creator-stats"><span><b>64</b>作品</span><span><b>9.7万</b>粉丝</span></div>
+      </article>
+      <article class="fw-creator" data-name="苏晚" data-field="深度影评" data-works="132" data-fans="21.3 万" tabindex="0" role="button" aria-label="查看创作者苏晚的资料">
+        <div class="fw-creator-avatar" style="background:linear-gradient(140deg,#ff9f76,#c9533a)">苏</div>
+        <h3>苏晚</h3>
+        <p class="fw-field">深度影评</p>
+        <p>写影评十二年，相信克制与分析比情绪化的赞美更有力量。</p>
+        <div class="fw-creator-stats"><span><b>132</b>作品</span><span><b>21.3万</b>粉丝</span></div>
+      </article>
+      <article class="fw-creator" data-name="周予行" data-field="城市影像记录" data-works="58" data-fans="7.2 万" tabindex="0" role="button" aria-label="查看创作者周予行的资料">
+        <div class="fw-creator-avatar" style="background:linear-gradient(140deg,#7cc6d6,#3a6e8f)">周</div>
+        <h3>周予行</h3>
+        <p class="fw-field">城市影像记录</p>
+        <p>用镜头走遍取景地，记录电影背后真实运转的街道与人。</p>
+        <div class="fw-creator-stats"><span><b>58</b>作品</span><span><b>7.2万</b>粉丝</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 影像墙 -->
+<section class="fw-section" id="fw-wall" style="border-top:1px solid var(--fw-line);">
+  <div class="fw-wrap">
+    <div class="fw-section-head">
+      <div>
+        <span class="fw-eyebrow">影像墙</span>
+        <h2 class="fw-h2">社区共创的<em>视觉片段</em></h2>
+        <p class="fw-section-desc">来自影迷与创作者的作品墙，风格各异，共同拼出 2025 年影片的观看记忆。</p>
+      </div>
+    </div>
+    <div class="fw-wall">
+      <figure class="fw-wall-item fw-wall-lg">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 300'%3E%3Cdefs%3E%3ClinearGradient id='w1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b1220'/%3E%3Cstop offset='100%' stop-color='%23555a8f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='300' fill='url(%23w1)'/%3E%3Ccircle cx='240' cy='140' r='80' fill='none' stroke='%23ffd166' stroke-width='2' opacity='.7'/%3E%3Ccircle cx='240' cy='140' r='40' fill='%23ff4d3d' opacity='.55'/%3E%3C/svg%3E" alt="影像墙作品：星轨与环形光晕的构成">
+        <figcaption>@南岸 · 星轨构成练习</figcaption>
+      </figure>
+      <figure class="fw-wall-item">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 150'%3E%3Crect width='240' height='150' fill='%23231a17'/%3E%3Cg stroke='%23ff9f76' stroke-width='2' opacity='.75'%3E%3Cpath d='M20 120 L60 70 L100 100 L140 55 L180 95 L220 60'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品：橙色折线与夜色构图">
+        <figcaption>@墨白 · 夜线</figcaption>
+      </figure>
+      <figure class="fw-wall-item">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 150'%3E%3Crect width='240' height='150' fill='%23132a26'/%3E%3Ccircle cx='80' cy='70' r='34' fill='%234ecdc4' opacity='.65'/%3E%3Ccircle cx='160' cy='90' r='24' fill='%23ffd166' opacity='.55'/%3E%3C/svg%3E" alt="影像墙作品：青色与琥珀色的双圆构成">
+        <figcaption>@青禾 · 双色</figcaption>
+      </figure>
+      <figure class="fw-wall-item fw-wall-wide">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 150'%3E%3Crect width='480' height='150' fill='%231a1e2b'/%3E%3Cg fill='%23ffffff' opacity='.12'%3E%3Crect x='40' y='40' width='60' height='110'/%3E%3Crect x='130' y='70' width='50' height='80'/%3E%3Crect x='210' y='30' width='70' height='120'/%3E%3Crect x='310' y='60' width='55' height='90'/%3E%3Crect x='395' y='45' width='45' height='105'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品：城市楼群剪影横构图">
+        <figcaption>@许行 · 楼群剪影</figcaption>
+      </figure>
+      <figure class="fw-wall-item">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 150'%3E%3Crect width='240' height='150' fill='%232a1b22'/%3E%3Cpath d='M0 120 Q60 60 120 100 T240 80 L240 150 L0 150 Z' fill='%23ff4d3d' opacity='.5'/%3E%3C/svg%3E" alt="影像墙作品：红色波浪地形构成">
+        <figcaption>@陈一 · 地表</figcaption>
+      </figure>
+      <figure class="fw-wall-item">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 150'%3E%3Crect width='240' height='150' fill='%23101b26'/%3E%3Cg stroke='%237cc6d6' stroke-width='1.5' opacity='.7' fill='none'%3E%3Cpath d='M30 110 L70 80 L110 95 L150 65 L190 85 L220 55'/%3E%3C/g%3E%3Cg fill='%237cc6d6'%3E%3Ccircle cx='190' cy='50' r='10' opacity='.8'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品：蓝色折线与圆点节奏">
+        <figcaption>@阿棠 · 节奏线</figcaption>
+      </figure>
+      <figure class="fw-wall-item">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 150'%3E%3Crect width='240' height='150' fill='%23202020'/%3E%3Cg fill='%23ffd166' opacity='.7'%3E%3Ccircle cx='60' cy='50' r='14'/%3E%3Ccircle cx='120' cy='80' r='22'/%3E%3Ccircle cx='180' cy='45' r='10'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品：琥珀色圆点散布">
+        <figcaption>@叶子 · 浮点</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评价 -->
+<section class="fw-section" id="fw-review">
+  <div class="fw-wrap">
+    <div class="fw-section-head">
+      <div>
+        <span class="fw-eyebrow">用户评价</span>
+        <h2 class="fw-h2">他们如何描述<em>影界的观看体验</em></h2>
+      </div>
+    </div>
+    <div class="fw-review-grid">
+      <article class="fw-review">
+        <div class="fw-review-head">
+          <span class="fw-avatar" style="background:#4ecdc4">顾</span>
+          <div><b>顾南舟</b><span>影视专业学生</span></div>
+        </div>
+        <p>把 2025 年几部大片的设定梳理得非常清楚，做作业时直接参考了专题里的时间线，省了很多工夫。</p>
+        <span class="fw-stars">★★★★★</span>
+      </article>
+      <article class="fw-review">
+        <div class="fw-review-head">
+          <span class="fw-avatar" style="background:#ffd166">何</span>
+          <div><b>何小满</b><span>影迷 · 加入 2 年</span></div>
+        </div>
+        <p>喜欢这里的影评不剧透关键情节，对还没看的人很友好。评论区也很少有争吵，氛围难得。</p>
+        <span class="fw-stars">★★★★★</span>
+      </article>
+      <article class="fw-review">
+        <div class="fw-review-head">
+          <span class="fw-avatar" style="background:#ff9f76">L</span>
+          <div><b>林間</b><span>自由剪辑师</span></div>
+        </div>
+        <p>幕后工坊那几期真的实用，灯光调度的手稿直接给了我一个商业项目的灵感，希望多做这类内容。</p>
+        <span class="fw-stars">★★★★☆</span>
+      </article>
+      <article class="fw-review">
+        <div class="fw-review-head">
+          <span class="fw-avatar" style="background:#7cc6d6">K</span>
+          <div><b>Kevin_周</b><span>从业者</span></div>
+        </div>
+        <p>内容质量稳定，更新节奏也靠谱。作为行业从业者，我更看重它的分析是否站得住脚，目前看是合格的。</p>
+        <span class="fw-stars">★★★★★</span>
+      </article>
+      <article class="fw-review">
+        <div class="fw-review-head">
+          <span class="fw-avatar" style="background:#c9a3ff">柏</span>
+          <div><b>柏舟</b><span>手绘爱好者</span></div>
+        </div>
+        <p>投稿了自己的手绘海报，第二天就收到编辑反馈，还帮忙改了作品说明，这种被认真对待的感觉很好。</p>
+        <span class="fw-stars">★★★★★</span>
+      </article>
+      <article class="fw-review">
+        <div class="fw-review-head">
+          <span class="fw-avatar" style="background:#9dd87a">一</span>
+          <div><b>一只豆</b><span>新用户</span></div>
+        </div>
+        <p>搜索功能很好用，输入片名就能直接找到相关解读和幕后视频，比在别处东翻西找方便多了。</p>
+        <span class="fw-stars">★★★★☆</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 企业动态 -->
+<section class="fw-section" id="fw-news" style="border-top:1px solid var(--fw-line);background:rgba(21,26,33,.35);">
+  <div class="fw-wrap">
+    <div class="fw-section-head">
+      <div>
+        <span class="fw-eyebrow">企业动态</span>
+        <h2 class="fw-h2">官方发布与<em>内容更新日志</em></h2>
+      </div>
+    </div>
+    <div class="fw-news-list">
+      <article class="fw-news-item">
+        <span class="fw-news-date">2025.11.18</span>
+        <div>
+          <h3>专题《科技叙事与银幕奇观》第二集正式上线</h3>
+          <p>本期聚焦特效工业与叙事节奏的配合，收录 4 部高口碑作品的流程拆解。</p>
+        </div>
+        <span class="fw-news-more">查看详情 →</span>
+      </article>
+      <article class="fw-news-item">
+        <span class="fw-news-date">2025.11.15</span>
+        <div>
+          <h3>创作者挑战赛「我的年度片单」开放报名</h3>
+          <p>面向所有影迷与创作者征集短片作品，报名通道开放至 12 月 10 日。</p>
+        </div>
+        <span class="fw-news-more">查看详情 →</span>
+      </article>
+      <article class="fw-news-item">
+        <span class="fw-news-date">2025.11.12</span>
+        <div>
+          <h3>高清片库更新：新增 8 部作品的导演访谈</h3>
+          <p>内容全部来自官方授权渠道，同步上线幕后花絮与主创问答。</p>
+        </div>
+        <span class="fw-news-more">查看详情 →</span>
+      </article>
+      <article class="fw-news-item">
+        <span class="fw-news-date">2025.11.05</span>
+        <div>
+          <h3>影界与三家影像机构达成内容合作</h3>
+          <p>合作方向覆盖素材授权、创作者孵化与技术交流，共建内容生态。</p>
+        </div>
+        <span class="fw-news-more">查看详情 →</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="fw-section" id="fw-faq">
+  <div class="fw-wrap">
+    <div class="fw-section-head">
+      <div>
+        <span class="fw-eyebrow">帮助中心</span>
+        <h2 class="fw-h2">关于平台的<em>常见问题</em></h2>
+      </div>
+    </div>
+    <div class="fw-faq">
+      <details open>
+        <summary>影界的内容主要围绕什么方向？</summary>
+        <div class="fw-faq-ans">平台以 2025 年欧美重点影片为核心线索，覆盖首发资讯、深度解读、幕后记录与社区共创四大方向。所有内容坚持原创与正版，视频素材均来自官方授权渠道。</div>
+      </details>
+      <details>
+        <summary>如何成为签约创作者？</summary>
+        <div class="fw-faq-ans">在联系与投稿区提交你的代表作品与创作方向，编辑团队会在 5 个工作日内回复。通过评估后，平台会提供素材支持、选题共创与分发建议，具体合作方式以双方沟通为准。</div>
+      </details>
+      <details>
+        <summary>投稿作品有什么格式要求？</summary>
+        <div class="fw-faq-ans">视频建议 16:9 横版，分辨率不低于 1080P，时长 3 至 20 分钟；图文作品请提供高清封面与正文。投稿时请确保素材版权清晰，涉及他人作品请注明授权来源。</div>
+      </details>
+      <details>
+        <summary>平台如何保护尚未观看的观众体验？</summary>
+        <div class="fw-faq-ans">我们在影评与解读类内容中统一采用剧透分级提示，对关键情节做遮挡处理，并在标题与摘要中避免直接写出结局信息，尽量保留完整性。</div>
+      </details>
+      <details>
+        <summary>内容更新频率是怎样的？</summary>
+        <div class="fw-faq-ans">焦点内容每周更新，专题企划按月更新，企业动态与片库更新会在公告条第一时间同步。重要更新会同时出现在页面顶部公告与动态列表中。</div>
+      </details>
+      <details>
+        <summary>可以申请转载平台内容吗？</summary>
+        <div class="fw-faq-ans">欢迎规范转载。请通过联系区提交转载申请，注明内容名称、使用场景与发布渠道，我们会在核实后提供授权说明。未经授权的搬运与二次剪辑将不被允许。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- 联系 / 投稿 -->
+<section class="fw-section" id="fw-contact">
+  <div class="fw-wrap">
+    <div class="fw-cta">
+      <div>
+        <span class="fw-eyebrow">联系我们</span>
+        <h2>把你的影像，放进<em>影界的内容生态</em></h2>
+        <p>无论你是影评人、剪辑师、摄影爱好者，还是只想聊聊某部影片的普通观众，影界都欢迎你的声音。投稿、合作与反馈，从这里开始。</p>
+        <div class="fw-cta-actions">
+          <button class="fw-btn-primary" id="fwSubmitBtn">我要投稿</button>
+          <button class="fw-btn-ghost" id="fwShareBtn">分享本页</button>
+          <button class="fw-btn-ghost" id="fwReportBtn">内容反馈</button>
+        </div>
+      </div>
+      <div class="fw-cta-side">
+        <div><span>合作邮箱</span><b>brand@filmrealm.cn</b></div>
+        <div><span>投稿响应</span><b>5 个工作日内</b></div>
+        <div><span>社区运营</span><b>全年持续在线</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="fw-footer">
+  <div class="fw-wrap">
+    <div class="fw-footer-grid">
+      <div class="fw-footer-brand">
+        <a class="fw-brand" href="#fwTop">
+          <span class="fw-brand-mark">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 5 L19 12 L8 19 Z" fill="#fff"/></svg>
+          </span>
+          <span class="fw-brand-name">影界<small>FILMREALM</small></span>
+        </a>
+        <p>影界官方网站，深耕影视垂直领域的视频品牌。我们以原创、正版、高清为内容底线，持续为影迷与创作者提供值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#fw-focus">焦点内容</a></li>
+          <li><a href="#fw-topic">专题企划</a></li>
+          <li><a href="#fw-wall">影像墙</a></li>
+          <li><a href="#fw-review">用户评价</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="#fw-about">品牌解析</a></li>
+          <li><a href="#fw-creator">创作者矩阵</a></li>
+          <li><a href="#fw-news">企业动态</a></li>
+          <li><a href="#fw-faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#fw-contact">投稿入口</a></li>
+          <li><a href="#fw-contact">合作联系</a></li>
+          <li><a href="#fw-contact">内容反馈</a></li>
+          <li><a href="#fwTop">回到首页</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fw-footer-bottom">
+      <span>© 2025 影界 FILMREALM 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容均为原创或官方授权 · 备案号 京ICP备2025000000号</span>
+    </div>
+  </div>
+</footer>
+
+<button class="fw-backtop" id="fwBackTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="fw-toast" id="fwToast"></div>
+
+<!-- 通用弹窗 -->
+<div class="fw-modal" id="fwModal" role="dialog" aria-modal="true" aria-labelledby="fwModalTitle">
+  <div class="fw-modal-box">
+    <button class="fw-modal-close" id="fwModalClose" aria-label="关闭">&times;</button>
+    <h3 id="fwModalTitle">投稿</h3>
+    <p id="fwModalDesc">填写下方信息，编辑团队将在 5 个工作日内与你联系。</p>
+    <form id="fwModalForm">
+      <div class="fw-field-group">
+        <label for="fwName">你的称呼</label>
+        <input type="text" id="fwName" placeholder="例如：林先生 / 苏晚">
+      </div>
+      <div class="fw-field-group">
+        <label for="fwEmail">联系方式</label>
+        <input type="email" id="fwEmail" placeholder="邮箱或常用联系方式">
+      </div>
+      <div class="fw-field-group">
+        <label for="fwMsg">补充说明</label>
+        <textarea id="fwMsg" rows="3" placeholder="作品方向、链接或想反馈的问题"></textarea>
+      </div>
+      <div class="fw-modal-actions">
+        <button type="button" class="fw-btn-ghost" id="fwModalCancel">取消</button>
+        <button type="submit" class="fw-btn-primary">提交</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var shell = document.getElementById('fwTop');
+  var burger = document.getElementById('fwBurger');
+  var mobileNav = document.getElementById('fwMobileNav');
+  var toast = document.getElementById('fwToast');
+  var toastTimer = null;
+
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('fw-show');
+    if(toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('fw-show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('fw-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobileNav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      mobileNav.classList.remove('fw-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* 导航高亮 */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.fw-nav a'));
+  var sections = navLinks.map(function(a){
+    var id = a.getAttribute('href');
+    return id && id.length > 1 ? document.querySelector(id) : null;
+  });
+  function updateActive(){
+    var pos = window.scrollY + (shell.offsetHeight + 60);
+    var current = 0;
+    sections.forEach(function(sec, i){
+      if(sec && sec.offsetTop <= pos) current = i;
+    });
+    navLinks.forEach(function(a, i){ a.classList.toggle('fw-active', i === current); });
+  }
+  window.addEventListener('scroll', updateActive, {passive:true});
+  updateActive();
+
+  /* 回到顶部 */
+  var backTop = document.getElementById('fwBackTop');
+  window.addEventListener('scroll', function(){
+    backTop.classList.toggle('fw-show', window.scrollY > 520);
+  }, {passive:true});
+  backTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 数字滚动 */
+  var stats = document.querySelectorAll('[data-count]');
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    var rect = stats.length ? stats[0].getBoundingClientRect() : null;
+    if(rect && rect.top < window.innerHeight - 60){
+      counted = true;
+      stats.forEach(function(el){
+        var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+        var start = 0, dur = 1200, t0 = null;
+        function step(t){
+          if(!t0) t0 = t;
+          var p = Math.min((t - t0) / dur, 1);
+          var val = Math.floor(start + (target - start) * (1 - Math.pow(1 - p, 3)));
+          el.textContent = val.toLocaleString('en-US');
+          if(p < 1) requestAnimationFrame(step);
+          else el.textContent = target.toLocaleString('en-US');
+        }
+        requestAnimationFrame(step);
+      });
+    }
+  }
+  window.addEventListener('scroll', runCount, {passive:true});
+  runCount();
+
+  /* 搜索筛选 */
+  var searchInput = document.getElementById('fwSearchInput');
+  var cards = Array.prototype.slice.call(document.querySelectorAll('#fwVideoGrid .fw-vcard'));
+  function doSearch(){
+    var kw = (searchInput.value || '').trim().toLowerCase();
+    if(!kw) { cards.forEach(function(c){ c.style.display=''; }); return; }
+    var hit = 0;
+    cards.forEach(function(card){
+      var text = (card.getAttribute('data-keys') || '') + ' ' + card.textContent;
+      var ok = text.toLowerCase().indexOf(kw) > -1;
+      card.style.display = ok ? '' : 'none';
+      if(ok) hit++;
+    });
+    showToast(hit ? '为你找到 ' + hit + ' 条相关内容' : '暂未找到相关视频，试试「星际」「摄影」「城市」');
+  }
+  searchInput.addEventListener('input', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+
+  /* 点赞 & 收藏 */
+  document.addEventListener('click', function(e){
+    var like = e.target.closest('.fw-like');
+    if(like){
+      var span = like.querySelector('span');
+      var num = parseInt(span.textContent, 10) || 0;
+      if(like.classList.toggle('fw-on')){
+        span.textContent = num + 1;
+        showToast('已点赞，感谢你的支持');
+      } else {
+        span.textContent = Math.max(0, num - 1);
+      }
+      return;
+    }
+    var fav = e.target.closest('.fw-fav');
+    if(fav){
+      var on = fav.classList.toggle('fw-on');
+      showToast(on ? '已加入收藏' : '已取消收藏');
+    }
+  });
+
+  /* 创作者弹窗 */
+  var creatorModal = document.getElementById('fwModal');
+  var modalTitle = document.getElementById('fwModalTitle');
+  var modalDesc = document.getElementById('fwModalDesc');
+  var modalForm = document.getElementById('fwModalForm');
+  var modalMode = 'submit';
+  var creatorData = null;
+
+  document.querySelectorAll('.fw-creator').forEach(function(card){
+    function openCreator(){
+      creatorData = {
+        name: card.getAttribute('data-name'),
+        field: card.getAttribute('data-field'),
+        works: card.getAttribute('data-works'),
+        fans: card.getAttribute('data-fans')
+      };
+      modalMode = 'creator';
+      modalTitle.textContent = creatorData.name + ' · ' + creatorData.field;
+      modalDesc.textContent = '作品数 ' + creatorData.works + ' · 粉丝 ' + creatorData.fans + '。关注后可第一时间收到新作更新。';
+      modalForm.style.display = 'none';
+      creatorModal.classList.add('fw-show');
+    }
+    card.addEventListener('click', openCreator);
+    card.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); openCreator(); }
+    });
+  });
+
+  function openForm(title, desc){
+    modalMode = 'submit';
+    modalTitle.textContent = title;
+    modalDesc.textContent = desc;
+    modalForm.style.display = '';
+    creatorModal.classList.add('fw-show');
+  }
+  function closeModal(){ creatorModal.classList.remove('fw-show'); }
+
+  document.getElementById('fwModalClose').addEventListener('click', closeModal);
+  document.getElementById('fwModalCancel').addEventListener('click', closeModal);
+  creatorModal.addEventListener('click', function(e){
+    if(e.target === creatorModal) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeModal();
+  });
+
+  modalForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('fwName').value.trim();
+    var email = document.getElementById('fwEmail').value.trim();
+    if(!name || !email){
+      showToast('请填写称呼与联系方式');
+      return;
+    }
+    closeModal();
+    modalForm.reset();
+    showToast('提交成功，我们会尽快与你联系');
+  });
+
+  /* 投稿 / 分享 / 反馈 */
+  document.getElementById('fwSubmitBtn').addEventListener('click', function(){
+    openForm('投稿与作品提交', '填写下方信息，编辑团队将在 5 个工作日内与你联系。');
+  });
+  document.getElementById('fwJoinBtn').addEventListener('click', function(){
+    openForm('加入影界社区', '留下你的称呼与联系方式，我们会发送社区指南与活动通知。');
+  });
+  document.getElementById('fwReportBtn').addEventListener('click', function(){
+    openForm('内容反馈', '如果你发现问题内容或有改进建议，请告诉我们要点。');
+  });
+  document.getElementById('fwShareBtn').addEventListener('click', function(){
+    var done = function(){ showToast('链接已复制，可分享给朋友'); };
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(window.location.href).then(done).catch(function(){
+        showToast('复制失败，请手动复制浏览器地址');
+      });
+    } else {
+      showToast('请使用浏览器分享功能');
+    }
+  });
+
+})();
+</script>
+</body>
+        </html>
